@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.globe.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b435a3359d.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="landing-canvas" class="landing landing-canvas">
+        <div class="landing-header">
+            <a href="https://delta.nitt.edu/" target="_blank"><i class="fas fa-globe"></i></a>
+            <a href="https://medium.com/delta-force" target="_blank"><i class="fab fa-medium"></i></a>
+            <a href="https://www.instagram.com/delta_nitt/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="landing-top">
+            <div class="landing-sub">Delta Force's</div><br />
+            <div class="landing-title">Scavenger Hunt</div>
+            <div class="landing-content">Will you be the first one to reach the end? Let's find out!</div>
+            <a href="https://bit.ly/IqT6zt" target="_blank"><button class="landing-button">ENTER</button></a>
+        </div>
+    </div>
+</body>
+
+<script>
+    VANTA.GLOBE({
+        el: '#landing-canvas', // element selector string or DOM object reference
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x71ca48,
+        backgroundColor: 0x1e1e1e
+    })
+</script>
+</html>
